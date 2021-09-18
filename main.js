@@ -3,4 +3,4 @@ console.log("main.js")
 }
 
 
-main()
+module.exports={main}
