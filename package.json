@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/codergihub/books#readme",
   "dependencies": {
+    "dotenv": "^10.0.0",
     "puppeteer": "^10.4.0"
   }
 }
