@@ -7,7 +7,8 @@
     "lib": "lib"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "snipe": "node snipe.js"
   },
   "repository": {
     "type": "git",
@@ -21,6 +22,7 @@
   "homepage": "https://github.com/codergihub/books#readme",
   "dependencies": {
     "dotenv": "^10.0.0",
-    "puppeteer": "^10.4.0"
+    "puppeteer": "^10.4.0",
+    "wflows": "^1.2.1"
   }
 }
