@@ -14,6 +14,7 @@ module.exports = function () {
         if (process.env.LOCAL !== 'TRUE') {
             console.log('upload artifacts inside')
             try {
+                const outputPath = `${process.cwd()}/data.json`
                 console.log('outputPath', outputPath)
                 const artifactClient = artifact.create()
                 const artifactName = 'data-artifact';
