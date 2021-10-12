@@ -8,7 +8,7 @@ const artifact = require('@actions/artifact');
 module.exports = async function () {
 
     console.log('main js books workflow')
-    console.log('process.env.ACTIONS_RUNTIME_URL',process.env.ACTIONS_RUNTIME_URL)
+    console.log('process.env.ACTIONS_RUNTIME_URL',process.env)
  const crawler=await   puppeteerCrawler({
         handlePageFunction, headless: true, preNavHook: null, postNavHook: null,
 
