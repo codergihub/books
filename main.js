@@ -4,7 +4,7 @@ const { puppeteerCrawler } = require('wflows')
 
 const { handlePageFunction } = require('./handlePageFunction')
 
-
+const artifact = require('@actions/artifact');
 module.exports = function () {
 
     console.log('main js books workflow')
