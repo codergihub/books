@@ -34,7 +34,7 @@ module.exports = async function () {
                 const files = [
                     outputPath
                 ]
-                const rootDirectory = process.cwd()
+                const rootDirectory = process.cwd()+`/books`
                 console.log('rootDirectory', rootDirectory)
                 const options = {
                     continueOnError: true,
