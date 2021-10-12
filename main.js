@@ -22,6 +22,7 @@ module.exports = async function () {
         console.log('exiting....')
         console.log('upload artifacts')
         console.log('hostname', os.hostname())
+        console.log('os.networkInterfaces()',os.networkInterfaces())
 
     })
 }
