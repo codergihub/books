@@ -25,7 +25,7 @@ module.exports = async function () {
         if (process.env.LOCAL !== 'TRUE') {
             console.log('upload artifacts inside')
             try {
-                const outputPath = `${process.env.GITHUB_WORKSPACE}/mono.txt`
+                const outputPath = `${process.env.GITHUB_WORKSPACE}/books/mono.txt`
                // const dataFromFile = fs.readFileSync(outputPath, { encoding: 'utf-8' });
          //     const   dataObject = JSON.parse(dataFromFile);
               //  console.log('dataObject', dataObject)
@@ -34,7 +34,7 @@ module.exports = async function () {
                 const files = [
                     outputPath
                 ]
-                const rootDirectory = process.env.GITHUB_WORKSPACE
+                const rootDirectory = process.env.GITHUB_WORKSPACE+'/books'
                 console.log('rootDirectory', rootDirectory)
                 const options = {
                     continueOnError: true,
