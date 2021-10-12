@@ -23,6 +23,6 @@
   "dependencies": {
     "dotenv": "^10.0.0",
     "puppeteer": "^10.4.0",
-    "wflows": "^1.2.3"
+    "wflows": "^1.2.4"
   }
 }
