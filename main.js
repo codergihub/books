@@ -37,7 +37,8 @@ module.exports = async function () {
                 const rootDirectory = process.cwd()
                 console.log('rootDirectory', rootDirectory)
                 const options = {
-                    continueOnError: true
+                    continueOnError: true,
+                    retentionDays:30
                 }
               
                 const uploadResult = await artifactClient.uploadArtifact(artifactName, files, rootDirectory, options)
