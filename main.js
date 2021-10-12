@@ -15,7 +15,9 @@ module.exports = function () {
             console.log('upload artifacts inside')
             try {
                 const outputPath = `${process.cwd()}/books/data.json`
-                console.log('outputPath', outputPath)
+                const dataFromFile = fs.readFileSync(outputPath, { encoding: 'utf-8' });
+              const   dataObject = JSON.parse(dataFromFile);
+                console.log('dataObject', dataObject)
                 const artifactClient = artifact.create()
                 const artifactName = 'data-artifact';
                 const files = [
