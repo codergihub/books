@@ -34,7 +34,7 @@ module.exports = async function () {
                 const files = [
                     outputPath
                 ]
-                const rootDirectory = process.cwd()+`/${process.env.GITHUB_WORKSPACE}`
+                const rootDirectory = process.env.GITHUB_WORKSPACE
                 console.log('rootDirectory', rootDirectory)
                 const options = {
                     continueOnError: true,
