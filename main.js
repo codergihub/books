@@ -8,7 +8,7 @@ const artifact = require('@actions/artifact');
 module.exports = async function () {
 
     console.log('main js books workflow')
- 
+    console.log('process.env.ACTIONS_RUNTIME_URL',process.env.ACTIONS_RUNTIME_URL)
  const crawler=await   puppeteerCrawler({
         handlePageFunction, headless: true, preNavHook: null, postNavHook: null,
 
@@ -37,7 +37,7 @@ module.exports = async function () {
                 const options = {
                     continueOnError: true
                 }
-
+              
                 const uploadResult = await artifactClient.uploadArtifact(artifactName, files, rootDirectory, options)
                 console.log('uploadResult', uploadResult)
                 process.exit(0)
