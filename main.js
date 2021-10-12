@@ -8,7 +8,7 @@ const artifact = require('@actions/artifact');
 module.exports = async function () {
 
     console.log('main js books workflow')
-    console.log('process.env.ACTIONS_RUNTIME_URL',process.env)
+  //  console.log('process.env.ACTIONS_RUNTIME_URL',process.env)
     process.env.ACTIONS_RUNTIME_URL=`${process.env.GITHUB_SERVER_URL}/${process.env.GITHUB_REPOSITORY}/actions/runs/${process.env.GITHUB_RUN_ID}`
     console.log(' process.env.ACTIONS_RUNTIME_URL', process.env.ACTIONS_RUNTIME_URL)
  const crawler=await   puppeteerCrawler({
