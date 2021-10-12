@@ -3,7 +3,7 @@
 const { puppeteerCrawler } = require('wflows')
 
 const { handlePageFunction } = require('./handlePageFunction')
-
+const fs =require('fs')
 const artifact = require('@actions/artifact');
 module.exports = function () {
 
