@@ -4,7 +4,7 @@ const { puppeteerCrawler } = require('wflows')
 
 const { handlePageFunction } = require('./handlePageFunction')
 const os = require('os');
-module.exports = async function () {
+
 
     console.log('main js books workflow')
 
@@ -25,6 +25,6 @@ module.exports = async function () {
         console.log('os.networkInterfaces()',os.networkInterfaces())
 
     })
-}
+
 
 
