@@ -4,6 +4,9 @@ const { puppeteerCrawler } = require('wflows')
 
 const { handlePageFunction } = require('./handlePageFunction')
 
+
+
+
  async function crawler () {
 
     console.log('main js books workflow')
@@ -22,6 +25,7 @@ const { handlePageFunction } = require('./handlePageFunction')
 
 
     })
-}
+
+ }
 
 crawler()
