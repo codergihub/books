@@ -8,7 +8,8 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "snipe": "node snipe.js"
+    "snipe": "node snipe.js",
+    "start": "node main.js"
   },
   "repository": {
     "type": "git",
@@ -23,6 +24,6 @@
   "dependencies": {
     "dotenv": "^10.0.0",
     "puppeteer": "^10.4.0",
-    "wflows": "^1.2.4"
+    "wflows": "^1.2.5"
   }
 }
