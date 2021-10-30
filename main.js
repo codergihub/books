@@ -9,7 +9,7 @@ const { handlePageFunction } = require('./handlePageFunction')
 
 async function crawler() {
 
-    console.log('main js books workflow',process.env.PAGE_URL,process.env)
+    console.log('main js books workflow',process.env.PAGE_URL)
 debugger;
     const crawler = await puppeteerCrawler({
         handlePageFunction, headless: true, preNavHook: null, postNavHook: null,
